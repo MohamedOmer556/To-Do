@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: url(/anete-lusina-2JknzBYDu6k-unsplash.jpg);
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+}
+h1 {
+  margin-top: 3rem;
+  font-size: 8rem;
+  color: rgb(33, 53, 53);
+}
+form,
+header {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-input,
+.todo-btn {
+  padding: 0.8rem 2rem;
+  font-size: 2rem;
+  background: white;
+  border: none;
+}
+.todo-btn {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.todo-btn:hover {
+  color: white;
+  background: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  list-style: none;
+  min-width: 25%;
+}
+.todo {
+  margin: 1rem;
+  background: white;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo li {
+  flex: 1;
+}
+.completed-btn,
+.removed-btn {
+  background: #ff6f47;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+}
+.completed-btn {
+  background: rgb(73, 204, 73);
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+.select {
+  margin-left: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0%;
+  right: 0;
+  pointer-events: none;
+  font-size: 1.5rem;
+  padding: 0.8rem 0.5rem;
+  transition: all 0.3s ease;
+}
+.select:hover::after {
+  background: black;
+  color: white;
+}
+#filter {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15rem;
+  cursor: pointer;
+  padding: 1rem 0.2rem;
+}
